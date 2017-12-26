@@ -1,0 +1,135 @@
+about
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Quattrocento', serif;*/
+
+
+body, html          { margin: 0; padding: 0; border: none; font-size: 100%; }
+.center-in-content  { width: 60% /*856px*/; margin: 0 auto; }
+.copy-style-padding { width: 80%; margin: 0 auto;}
+
+
+.wallpaper { width: 100%; height: 440px; background: url(../images/jumbotron_bg.png) center center, #666; background-size: cover; }
+.wallpaper h1 { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 3.6em; color: #eceaea; margin-top: 340px; }
+
+
+header                     { width: 100%; height: 104px; background-color: #fff; }
+header .right              { text-align: right; margin-top: 5px; }
+header h1                  { font-family: 'Raleway', sans-serif;font-weight: 900; font-size: 3.6em; color: #4a4a4a; margin-top: 24px; } 
+header h1 span             { font-weight: 400; font-size: 36px; }
+header .right p,
+header .right a            { display: block; margin-bottom: 5px; font-family: 'Raleway', sans-serif; color: #4a4a4a; text-decoration: none; }
+header .right .social      { padding-top: 5px; }
+header .right .social li   { margin-left: 12px; }
+header .right .social li a { color: #4a4a4a; }
+header ul li               { display: inline-block; } 
+header nav                 { margin-top: 5px; }
+header nav ul li           { padding-left: 40px; }
+header nav ul li a         { font-family: 'Raleway', sans-serif; font-weight: 700; color: #4a4a4a; text-decoration: none; }
+header nav ul              { position: relative; }
+
+header nav > ul > li:nth-child(3):after { content: "\25BC";position: absolute; top: 0; margin-left: 5px; }
+header nav > ul > li:nth-child(3) a:hover: { visibility: visible; }
+
+header nav ul .submenu { 
+	display: block; 
+	position: absolute;
+	width: 200px; 
+	height: auto; 
+	border-radius: 10px; 
+	text-align: left; 
+	background-color: #1e1e1e; 
+	visibility: hidden;
+
+	z-index: 1;
+	opacity: 0;
+
+	transform: translateX(-150em);
+	z-index: -1;
+  	transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0.3s linear 0.01s;
+	
+}
+
+
+header nav ul .submenu:before { content: "\25B2"; position: absolute; top: -13px; left: 63px; margin-left: 5px; }
+header nav ul .submenu li     { display: block; margin: 0; padding: 0; } 
+header nav ul .submenu li a   { font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 1em; color: #eceaea; display: block; width: 83%; padding: 16px; border-bottom: 2px solid #2d2b2b; }
+header nav ul > li:hover .submenu  { 
+	visibility: visible;
+  	transform: translateX(0%);
+  	z-index: 100;
+  	opacity: 1;
+  	transition-delay: 0s, 0.3s, 0.3s; 
+}
+
+
+
+
+
+.main_content {  }
+.main_content article     { text-align: center; margin-top: 103px; margin-bottom: 103px; }
+.main_content article  h2 { font-family: 'Oswald', sans-serif; font-weight: 900; font-size: 1.9em; color: #4a4a4a; margin-bottom: 80px; }
+.main_content article  p  { font-family: 'Raleway', serif; font-weight: 400; font-size: 1.2em; color: #4a4a4a; line-height: 1.4em; }
+.main_content article .approach,
+.main_content article .expertise, 
+.main_content article .award { margin-top: 104px; }
+.main_content article .expertise .categ p { font-family: 'Raleway', serif; font-weight: 700; font-size: 1em; color: #4a4a4a; margin-top: 25px; margin-bottom: 25px; }
+.main_content article .expertise p strong { font-weight: 700; }
+
+
+
+
+
+
+footer .upper_ribbon             { width: 100%; height: 275px; background-color: #1e1e1e; }
+footer .upper_ribbon .address,
+footer .upper_ribbon .projects,
+footer .upper_ribbon .links      { width: 218px; height: 196px; display: inline-block; margin-top: 40px; }
+footer .upper_ribbon .center     { text-align: center; }
+footer .upper_ribbon .right      { text-align: right; }
+
+footer .upper_ribbon .address h2 { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 1.3em; color: #eceaea; margin-bottom: 29px; }
+footer .upper_ribbon .address p  { font-family: 'Raleway', sans-serif; font-weight: 300; font-size: .9em; line-height: 32px; color: #eceaea; height: 28px; border-bottom: 1px dotted #4a4a4a; }
+footer .upper_ribbon .address p:last-of-type { border: none; }
+
+footer .upper_ribbon .projects article { text-align: left; }
+footer .upper_ribbon .projects h2 { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 1.3em; color: #eceaea; margin-bottom: 29px; }
+footer .upper_ribbon .projects p  { font-family: 'Raleway', sans-serif; font-weight: 300; font-size: .9em; line-height: 32px; color: #eceaea; height: 28px; border-bottom: 1px dotted #4a4a4a; }
+footer .upper_ribbon .projects p:last-of-type { border: none; }
+
+footer .upper_ribbon .links article { text-align: left; }
+footer .upper_ribbon .links h2      { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 1.3em; color: #eceaea; margin-bottom: 29px; }
+footer .upper_ribbon .links p       { font-family: 'Raleway', sans-serif; font-weight: 300; font-size: .9em; line-height: 32px; height: 28px; border-bottom: 1px dotted #4a4a4a; }
+footer .upper_ribbon .links p a     { color: #eceaea; text-decoration: none; }
+footer .upper_ribbon .links p:last-of-type { border: none; }
+
+
+footer .lowest_ribbon         { width: 100%; height: 104px; background-color: #181818; }
+footer .lowest_ribbon h1      { font-family: 'Raleway', sans-serif; font-weight: 900; font-size: 3.6em; color: #4a4a4a; margin-top: 24px; color: #eceaea; }
+footer .lowest_ribbon h1 span { font-weight: 400; font-size: 36px; }
+footer .lowest_ribbon .copy   { text-align: center; }
+footer .lowest_ribbon .copy p,
+footer .lowest_ribbon .copy a { font-family: 'Raleway', sans-serif; color: #eceaea; margin-top: 60px; font-size: 1em; }
+footer .lowest_ribbon .copy a { text-decoration: none; font-weight: 700; }
+footer .social                { padding-top: 60px; text-align: right; }
+footer .social li             { margin-left: 12px; }
+footer .social li a           { color: #eceaea; }
+footer ul li                  { display: inline-block; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
